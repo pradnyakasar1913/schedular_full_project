@@ -250,7 +250,8 @@ const worker = new Worker(
       });
 
       taskFailureCounter.inc(); // Increment failure metric
-      console.error(`Failed job: ${job.data.title}`, err);
+      //console.error(`Failed job: ${job.data.title}`, err);
+      console.error(`failed job: ${job.data.title}`,err);
     }
   },
   { connection }
